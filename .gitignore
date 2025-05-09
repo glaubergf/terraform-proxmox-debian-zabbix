@@ -1,0 +1,16 @@
+# CONFIG .gitignore
+
+# Diretórios locais
+.terraform/
+security/
+
+# Arquivos locais
+configs/zabbix_cloud_init.cfg
+configs/zabbix_network_config.cfg
+notes/docker-compose.yml.txt
+.terraform.lock.hcl
+plano-zabbix
+terraform.tfstate*
+terraform.tfvars
+
+# Actions-Runner*
