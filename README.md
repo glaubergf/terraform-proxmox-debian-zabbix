@@ -59,7 +59,7 @@ Este projeto provisiona automaticamente um servidor **Debian 12 (Bookworm)** no 
 ## 📂 Estrutura do Projeto
 
 ```
-terraform-proxmox-debian-szabbix
+terraform-proxmox-debian-zabbix
 ├── configs
 │   ├── cloud_config.yml
 │   ├── config_motd.sh
