@@ -1,5 +1,5 @@
 ---
-Projeto: terraform-proxmox-debian-syspass
+Projeto: terraform-proxmox-debian-zabbix
 Descrição: Este projeto automatiza o provisionamento de um servidor Debian 12 (Bookworm) no Proxmox, utilizando Terraform e Cloud-Init, realizando a instalação do Zabbix via containers Docker.
 Autor: Glauber GF (mcnd2)
 Criado em: 18-04-2025
