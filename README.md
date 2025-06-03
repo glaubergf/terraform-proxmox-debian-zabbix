@@ -40,7 +40,7 @@ Este projeto provisiona automaticamente um servidor **Debian 12 (Bookworm)** no 
 - [Debian 12 (Bookworm)](https://www.debian.org/) — Sistema operacional da VM.
 ---
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white&style=for-the-badge)
-- [Docker](https://www.docker.com/) — Containerização da aplicação sysPass.
+- [Docker](https://www.docker.com/) — Containerização da aplicação Zabbix.
 ---
 ![Zabbix](https://img.shields.io/badge/Zabbix-CC0000?style=for-the-badge&logo=zabbix&logoColor=white)
 - [Zabbix](https://www.zabbix.com) — Monitoramento de infraestrutura
@@ -109,6 +109,18 @@ terraform-proxmox-debian-zabbix
 
 7. **Deploy dos containers Zabbix:** O Docker Compose sobe os containers do Zabbix e do banco MariaDB.
 
+## 🛠️ Terraform
+
+Ferramenta de IaC (Infrastructure as Code) que permite definir e gerenciar infraestrutura através de arquivos de configuração declarativos.
+
+Saiba mais: [https://developer.hashicorp.com/terraform](https://developer.hashicorp.com/terraform)
+
+## 🖥️ Proxmox VE
+
+O Proxmox VE é um hipervisor bare-metal, robusto e completo, muito utilizado tanto em ambientes profissionais quanto em homelabs. É uma plataforma de virtualização open-source que permite gerenciar máquinas virtuais e containers de forma eficiente, com suporte a alta disponibilidade, backups, snapshots e uma interface web intuitiva.
+
+Saiba mais: [https://www.proxmox.com/](https://www.proxmox.com/)
+
 ## 🐧 Debian
 
 Distribuição Linux livre, estável e robusta. A imagem utilizada é baseada em **Debian noCloud**, que permite integração com Cloud-Init no Proxmox.
@@ -125,6 +137,12 @@ Ferramenta de provisionamento padrão de instâncias de nuvem. Permite configura
 
 Saiba mais: [https://cloudinit.readthedocs.io/](https://cloudinit.readthedocs.io/)
 
+## 🐳 Docker
+
+Plataforma que permite empacotar, distribuir e executar aplicações em containers de forma leve, portátil e isolada, facilitando a implantação e escalabilidade de serviços.
+
+Saiba mais: [https://www.docker.com](https://www.docker.com)
+
 ## 📈 Zabbix
 
 O Zabbix é uma poderosa plataforma de monitoramento de infraestrutura, redes, servidores, serviços, aplicações e recursos em nuvem.
@@ -139,12 +157,6 @@ Este deploy inclui:
 
 Saiba mais: [https://www.zabbix.com/](https://www.zabbix.com/)
 
-## ⚙️ Terraform
-
-Ferramenta de IaC (Infrastructure as Code) que permite definir e gerenciar infraestrutura através de arquivos de configuração declarativos.
-
-Saiba mais: [https://developer.hashicorp.com/terraform](https://developer.hashicorp.com/terraform)
-
 ## ▶️ Execução do Projeto
 
 1. Clone o repositório:
@@ -156,7 +168,7 @@ cd terraform-proxmox-debian-zabbix
 
 2. Configure suas variáveis em `terraform.tfvars`.
 
-3. Execute os comandos abaixo para criar, mostrar o que vai ser criado e aplicar o provisionamento:
+3. Execute os comandos abaixo para iniciar, mostrar o que vai ser criado e aplicar o provisionamento:
 
 ```bash
 terraform init
